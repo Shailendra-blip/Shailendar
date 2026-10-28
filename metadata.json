@@ -1,0 +1,8 @@
+{
+  "name": "GDG Campus Connect — Poornima University",
+  "description": "Developer community platform for Google Developer Groups on Campus at Poornima University, Jaipur. Explore events, hands-on workshops, project showcase, and connect with fellow student innovators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

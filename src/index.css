@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --color-jet-black: #050505;
+  --color-deep-black: #0A0A0F;
+  --color-cerulean-blue: #00AEEF;
+  --color-neon-rose: #FF2DAA;
+  --color-white: #F5F5F7;
+  --color-muted-gray: #A1A1AA;
+  --color-border: #24242D;
+  
+  color-scheme: dark;
+}
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-jet: #050505;
+  --color-deep: #0A0A0F;
+  --color-cerulean: #00AEEF;
+  --color-rose: #FF2DAA;
+  --color-pure-white: #F5F5F7;
+  --color-muted: #A1A1AA;
+  --color-edge: #24242D;
+}
+
+body {
+  background-color: #050505;
+  color: #F5F5F7;
+}
+
+/* Subtle Futuristic Cyber Grid Pattern */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 174, 239, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 174, 239, 0.04) 1px, transparent 1px);
+}
+
+/* Futuristic Neon & Glow Utilities */
+.glow-cerulean {
+  box-shadow: 0 0 30px -5px rgba(0, 174, 239, 0.45);
+}
+
+.glow-rose {
+  box-shadow: 0 0 30px -5px rgba(255, 45, 170, 0.45);
+}
+
+.text-glow-cerulean {
+  text-shadow: 0 0 20px rgba(0, 174, 239, 0.5);
+}
+
+.text-glow-rose {
+  text-shadow: 0 0 20px rgba(255, 45, 170, 0.5);
+}
+
+/* Glass Panels with Dark Border */
+.glass-panel {
+  background: rgba(10, 10, 15, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid #24242D;
+}
+
+/* Scrollbar polish in Cerulean Blue */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #24242D;
+  border-radius: 9999px;
+  border: 1px solid rgba(0, 174, 239, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00AEEF;
+  box-shadow: 0 0 10px #00AEEF;
+}
